@@ -1,22 +1,23 @@
 #include "Student.h"
 
-
-void Student::setGroupTitle(std::string groupTitle)
-{
-	this->groupTitle = groupTitle;
+int Student::getID() {
+	return this->id;
 }
 
-void Student::pushGrade(int grade)
+std::string Student::getName()
 {
+	return this->name;
+}
+
+void Student::pushGrade(int grade) {
 	diary.pushGrade(grade);
 }
 
 
-void Student::render()
-{
+void Student::render() {
+
 	std::cout << "id: " << this->id << " name: " << this->name << " age: " << this->age;
 	std::cout << " gender: " << (char)this->gender << '\n';
-	std::cout << "group: " << this->groupTitle << '\n';
 
 	std::cout << "GRADES: ";
 	if (this->diary.getGradesCount() == 0) {
