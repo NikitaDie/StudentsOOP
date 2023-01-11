@@ -26,6 +26,7 @@ public:
 
 	void pushGrade(int grade);
 
+
 	void render();
 
 	//~Student();

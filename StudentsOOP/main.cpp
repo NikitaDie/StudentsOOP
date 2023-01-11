@@ -17,7 +17,7 @@ int main()
 	}
 
 	p15.getStudentByID(0).render();
-	p15.getStudentByID(2).render();
+	p15.getStudentByName("Kamila").render();
 
 	return 0;
 }

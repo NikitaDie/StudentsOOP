@@ -13,7 +13,6 @@ void Student::pushGrade(int grade) {
 	diary.pushGrade(grade);
 }
 
-
 void Student::render() {
 
 	std::cout << "id: " << this->id << " name: " << this->name << " age: " << this->age;

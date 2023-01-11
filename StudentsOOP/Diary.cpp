@@ -1,6 +1,6 @@
 #include "Diary.h"
 
-void Diary::pushGrade(int grade) { //check
+void Diary::pushGrade(int grade) { 
 	if (gradesCount == gradesSize) {
 		gradesSize *= 2;
 		int* tmp_grades{ new int[gradesSize] };

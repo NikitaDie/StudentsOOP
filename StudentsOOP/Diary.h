@@ -25,8 +25,6 @@ public:
 		}
 	}
 
-	//coping_operator?
-
 	void pushGrade(int grade);
 
 	int getGradesCount();
