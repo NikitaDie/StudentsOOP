@@ -9,9 +9,7 @@ private:
 	std::string groupTitle{ "no_group_title" };
 	std::vector<Student> students;
 public:
-	Group(std::string title) :
-		groupTitle{ title }
-	{}
+	Group(std::string title);
 
 	std::string getTitle();
 

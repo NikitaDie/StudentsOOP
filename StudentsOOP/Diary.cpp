@@ -1,6 +1,21 @@
 #include "Diary.h"
 
-void Diary::pushGrade(int grade) { 
+Diary::Diary() :
+	grades{ new int[INIT_GRADES_COUNT] }
+{}
+
+Diary::Diary(const Diary & diary) :
+	gradesSize{ diary.gradesSize },
+	gradesCount{ diary.gradesCount },
+	grades{ new int[diary.gradesSize] }
+
+{
+	for (int i{ 0 }; i < diary.gradesSize; ++i) {
+		grades[i] = diary.grades[i];
+	}
+}
+
+void Diary::pushGrade(int grade) {
 	if (gradesCount == gradesSize) {
 		gradesSize *= 2;
 		int* tmp_grades{ new int[gradesSize] };

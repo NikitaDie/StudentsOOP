@@ -1,5 +1,9 @@
 #include "Group.h"
 
+Group::Group(std::string title) :
+    groupTitle{ title }
+{}
+
 std::string Group::getTitle()
 {
 	return this->groupTitle;

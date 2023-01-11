@@ -1,5 +1,12 @@
 #include "Student.h"
 
+Student::Student(std::string name, short age, Gender gender) :
+	id{ ++MAX_ID },
+	name{ name },
+	age{ age },
+	gender{ gender }
+{}
+
 int Student::getID() {
 	return this->id;
 }
